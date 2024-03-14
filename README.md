@@ -31,3 +31,4 @@ Check the [list of problems](#list-of-problems) to get started.
 | No. | Problem                     | Answer                                                         | Tags    |
 | --- | --------------------------- | -------------------------------------------------------------- | ------- |
 | 1   | Reverse String and Integers | [Solution](./problems/01-reverse-string-and-integers/index.js) | Strings |
+| 2   | Check Palindrome            | [Solution](./problems/02-palindrome/index.js)                  | Strings |
