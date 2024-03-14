@@ -2,8 +2,6 @@
 
 This repository contains solutions to some common coding interview problems. The problems are solved in JavaScript. Contributions in other languages are welcome.
 
-Check the [list of problems](#list-of-problems) to get started.
-
 ## List of Problems
 
 | No. | Problem                     | Answer                                                         | Tags    |
