@@ -1,6 +1,8 @@
 # Coding Interview Problems
 
-This repository contains solutions to some common coding interview problems. The problems are solved in JavaScript. Contributions in other languages are welcome. Check the [list of problems](#list-of-problems) to get started.
+This repository contains solutions to some common coding interview problems. The problems are solved in JavaScript. Contributions in other languages are welcome.
+
+Check the [list of problems](#list-of-problems) to get started.
 
 ## Local Setup
 
@@ -26,6 +28,6 @@ This repository contains solutions to some common coding interview problems. The
 
 ## List of Problems
 
-| No. | Problem                 | Solution                 | Tags              |
-| --- | ----------------------- | ------------------------ | ----------------- |
-| 1   | [Two Sum](./two-sum.js) | [Solution](./two-sum.js) | Array, Hash Table |
+| No. | Problem                     | Answer                                                         | Tags    |
+| --- | --------------------------- | -------------------------------------------------------------- | ------- |
+| 1   | Reverse String and Integers | [Solution](./problems/01-reverse-string-and-integers/index.js) | Strings |
