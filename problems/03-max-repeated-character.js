@@ -25,5 +25,29 @@ const maxChar = (str) => {
   return maxCountKey;
 };
 
+const easyMaxChar = (str) => {
+  let strCount = {};
+  let maxCountKey = null;
+  let maxCountValue = 0;
+
+  for (let char of str) {
+    if (strCount[char]) {
+      strCount[char] = strCount[char] + 1;
+    } else {
+      strCount[char] = 1;
+    }
+  }
+
+  // Only iterate once for every character
+  for (let key in strCount) {
+    if (strCount[key] > maxCountValue) {
+      maxCountValue = strCount[key];
+      maxCountKey = key;
+    }
+  }
+
+  return maxCountKey;
+};
+
 const value = maxChar('abbccccddd');
 console.log(value);
