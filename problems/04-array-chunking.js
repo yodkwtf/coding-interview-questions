@@ -6,6 +6,7 @@
 // chunk([1, 2, 3, 4, 5], 4) --> [[ 1, 2, 3, 4], [5]]
 // chunk([1, 2, 3, 4, 5], 10) --> [[ 1, 2, 3, 4, 5]]
 
+//# Basic Way
 function chunk(array, size) {
   let chunkedArray = [];
   let curChunk = [];
@@ -24,5 +25,22 @@ function chunk(array, size) {
   return chunkedArray;
 }
 
-const result = chunk([1, 2, 3, 4, 5, 6, 7, 8], 3);
+// # Fancy Way
+const fancyChunking = (array, size) => {
+  const finalChunk = [];
+  let curChunk = [];
+
+  for (let item of array) {
+    curChunk.push(item);
+
+    if (curChunk.length === size || item === array[array.length - 1]) {
+      finalChunk.push(curChunk);
+      curChunk = [];
+    }
+  }
+
+  return finalChunk;
+};
+
+const result = fancyChunking([1, 2, 3, 4, 5], 3);
 console.log(result);
