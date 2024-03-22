@@ -12,3 +12,4 @@ This repository contains solutions to some common coding interview problems. The
 |  4  | Array Chunking              | [Solution](./problems/04-array-chunking.js)         | Arrays                    |
 |  5  | Capitalize String           | [Solution](./problems/05-capiatalize-string.js)     | Strings, Arrays           |
 |  6  | Anagrams                    | [Solution](./problems/06-anagrams.js)               | Strings, Arrays, Hashmaps |
+|  7  | Vowel Count                 | [Solution](./problems/07-vowel-count.js)            | Strings                   |
