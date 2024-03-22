@@ -74,6 +74,31 @@ const optimizedAnagrams = (str1, str2) => {
   return true;
 };
 
+// # Short
+function sortStr(str) {
+  return str.split('').sort().join('');
+}
+
+const shortAnagrams = (str1, str2) => {
+  // cleanup
+  const text1 = textCleanup(str1);
+  const text2 = textCleanup(str2);
+
+  // convert to sorted string
+  const sortedText1 = sortStr(text1);
+  const sortedText2 = sortStr(text2);
+
+  return sortedText1 === sortedText2;
+};
+
+// # Shortest
+const shortestAnagrams = (str1, str2) => {
+  return (
+    str1.replace(/[^\w]/g, '').toLowerCase().split('').sort().join('') ===
+    str2.replace(/[^\w]/g, '').toLowerCase().split('').sort().join('')
+  );
+};
+
 // - Function Call
-const result = optimizedAnagrams('RAIL! SAFETY!', 'fairy tales');
+const result = shortestAnagrams('coding money', 'money coding');
 console.log(result);
