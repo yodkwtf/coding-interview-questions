@@ -5,6 +5,7 @@
 //   anagrams('RAIL! SAFETY!', 'fairy tales') --> True
 //   anagrams('Hi there', 'Bye there') --> False
 
+// #Basic
 const anagrams = (str1, str2) => {
   const text1 = str1.replace(/[^\w]/g, '').toLowerCase();
   const text2 = str2.replace(/[^\w]/g, '').toLowerCase();
@@ -14,7 +15,7 @@ const anagrams = (str1, str2) => {
   }
 
   let charMap1 = {};
-  for (let char in text1) {
+  for (let char of text1) {
     if (charMap1[char]) {
       charMap1[char] = charMap1[char] + 1;
     } else {
@@ -23,7 +24,7 @@ const anagrams = (str1, str2) => {
   }
 
   let charMap2 = {};
-  for (let char in text2) {
+  for (let char of text2) {
     if (charMap2[char]) {
       charMap2[char] = charMap2[char] + 1;
     } else {
@@ -31,7 +32,7 @@ const anagrams = (str1, str2) => {
     }
   }
 
-  for (let char in text1) {
+  for (let char of text1) {
     if (charMap1[char] !== charMap2[char]) {
       return false;
     }
@@ -40,6 +41,39 @@ const anagrams = (str1, str2) => {
   return true;
 };
 
+// # Optimized
+function textCleanup(str) {
+  return str.replace(/[^\w]/g, '').toLowerCase();
+}
+
+function strToCharMap(str) {
+  let charMap = {};
+  for (let char of str) {
+    charMap[char] = charMap[char] + 1 || 1;
+    // firstTime -> charMap[char] + 1 = undefined + 1 = NaN (falsy)
+  }
+  return charMap;
+}
+
+const optimizedAnagrams = (str1, str2) => {
+  // cleanup
+  const text1 = textCleanup(str1);
+  const text2 = textCleanup(str2);
+
+  if (text1.length !== text2.length) return false;
+
+  // convert to char map
+  const charMap1 = strToCharMap(text1);
+  const charMap2 = strToCharMap(text2);
+
+  // compare both maps
+  for (let char in charMap1) {
+    if (charMap1[char] !== charMap2[char]) return false;
+  }
+
+  return true;
+};
+
 // - Function Call
-const result = anagrams('coding money', 'money coding');
+const result = optimizedAnagrams('RAIL! SAFETY!', 'fairy tales');
 console.log(result);
