@@ -92,12 +92,9 @@ const shortAnagrams = (str1, str2) => {
 };
 
 // # Shortest
-const shortestAnagrams = (str1, str2) => {
-  return (
-    str1.replace(/[^\w]/g, '').toLowerCase().split('').sort().join('') ===
-    str2.replace(/[^\w]/g, '').toLowerCase().split('').sort().join('')
-  );
-};
+const shortestAnagrams = (str1, str2) =>
+  str1.replace(/[^\w]/g, '').toLowerCase().split('').sort().join('') ===
+  str2.replace(/[^\w]/g, '').toLowerCase().split('').sort().join('');
 
 // - Function Call
 const result = shortestAnagrams('coding money', 'money coding');
