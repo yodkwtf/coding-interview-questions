@@ -14,4 +14,4 @@ This repository contains solutions to some common coding interview problems. The
 |  6  | Anagrams                    | [Solution](./problems/06-anagrams.js)                     | Strings, Arrays, Hashmaps |
 |  7  | Vowel Count                 | [Solution](./problems/07-vowel-count.js)                  | Logical                   |
 |  8  | FizzBuzz                    | [Solution](./problems/08-fizzbuzz.js)                     | Logical                   |
-|  9  | Steps String Pattern        | [Solution](./problems/09-steps-string-pattern.js)         | Strings                   |
+|  9  | Steps String Pattern        | [Solution](./problems/09-steps-string-pattern.js)         | Logical                   |

@@ -13,7 +13,8 @@
 //       '### '
 //       '####'
 
-const steps = (n) => {
+//# Basic solution
+const stepsBasic = (n) => {
   let line = '';
 
   for (let i = 1; i <= n; i++) {
@@ -25,4 +26,17 @@ const steps = (n) => {
   }
 };
 
-steps(5);
+//# Complete solution
+const stepsWithSpaces = (n) => {
+  for (let i = 1; i <= n; i++) {
+    let line = '';
+
+    for (let j = 1; j <= n; j++) {
+      line += j <= i ? '#' : ' ';
+    }
+
+    console.log(line);
+  }
+};
+
+stepsWithSpaces(5);
