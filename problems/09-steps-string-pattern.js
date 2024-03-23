@@ -13,6 +13,16 @@
 //       '### '
 //       '####'
 
-const steps = (n) => {};
+const steps = (n) => {
+  let line = '';
 
-steps(3);
+  for (let i = 1; i <= n; i++) {
+    for (let j = 1; j <= i; j++) {
+      line += '#';
+    }
+    console.log(line);
+    line = '';
+  }
+};
+
+steps(5);
