@@ -10,6 +10,25 @@
 //       ' ### '
 //       '#####'
 
-const pyramid = (n) => {};
+//# Base Solution
+const pyramid = (n) => {
+  for (let rowIndex = 0; rowIndex < n; rowIndex++) {
+    let line = '';
+    const midIndex = n - 1;
 
-pyramid(3);
+    for (let colIndex = 0; colIndex < 2 * n - 1; colIndex++) {
+      const leftStartIndex = midIndex - rowIndex;
+      const rightEndIndex = midIndex + rowIndex;
+
+      if (colIndex >= leftStartIndex && colIndex <= rightEndIndex) {
+        line += '#';
+      } else {
+        line += '_';
+      }
+    }
+
+    console.log(line);
+  }
+};
+
+pyramid(5);
