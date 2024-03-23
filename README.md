@@ -15,3 +15,4 @@ This repository contains solutions to some common coding interview problems. The
 |  7  | Vowel Count                 | [Solution](./problems/07-vowel-count.js)                  | Logical                   |
 |  8  | FizzBuzz                    | [Solution](./problems/08-fizzbuzz.js)                     | Logical                   |
 |  9  | Steps Pattern               | [Solution](./problems/09-steps-pattern.js)                | Logical                   |
+| 10  | Pyramid Pattern             | [Solution](./problems/10-pyramid-pattern.js)              | Logical                   |
