@@ -31,4 +31,18 @@ const pyramid = (n) => {
   }
 };
 
-pyramid(5);
+//# Optimized Solution
+const betterPyramid = (n) => {
+  for (let i = 0; i < n; i++) {
+    let line = '';
+    const mid = n - 1;
+
+    for (let j = 0; j < 2 * n - 1; j++) {
+      line += j >= mid - i && j <= mid + i ? '#' : '_';
+    }
+
+    console.log(line);
+  }
+};
+
+betterPyramid(5);
