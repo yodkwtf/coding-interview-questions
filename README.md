@@ -17,3 +17,4 @@ This repository contains solutions to some common coding interview problems. The
 |  9  | Steps Pattern               | [Solution](./problems/09-steps-pattern.js)                | Logical, Strings           |
 | 10  | Pyramid Pattern             | [Solution](./problems/10-pyramid-pattern.js)              | Logical, Advanced, Strings |
 | 11  | Spiral Matrix               | [Solution](./problems/11-spiral-matrix.js)                | Advanced, Logical, Arrays  |
+| 12  | Rotate Matrix               | [Solution](./problems/12-rotate-matrix.js)                | Advanced, Logical, Arrays  |
