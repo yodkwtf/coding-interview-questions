@@ -31,7 +31,27 @@
 //       [16, 12, 8, 4]
 //     ]
 
-const rotateMatrix = (matrix) => {};
+const rotateMatrix = (matrix) => {
+  const rotated = [];
+  const n = matrix.length;
+  let rowIndexToRotate = 0;
+  let columnIndexToRotateTo = n - 1;
+
+  // insert empty arrays
+  for (let i = 0; i < n; i++) {
+    rotated.push([]);
+  }
+
+  while (rowIndexToRotate < n && columnIndexToRotateTo >= 0) {
+    for (let i = 0; i < n; i++) {
+      rotated[i][columnIndexToRotateTo] = matrix[rowIndexToRotate][i];
+    }
+    rowIndexToRotate++;
+    columnIndexToRotateTo--;
+  }
+
+  return rotated;
+};
 
 //# Function call
 const mat2 = [
