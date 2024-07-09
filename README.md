@@ -18,3 +18,4 @@ This repository contains solutions to some common coding interview questions. Th
 | 10  | Pyramid Pattern             | [Solution](./problems/10-pyramid-pattern.js)              | Logical, Advanced, Strings |
 | 11  | Spiral Matrix               | [Solution](./problems/11-spiral-matrix.js)                | Advanced, Logical, Arrays  |
 | 12  | Rotate Matrix               | [Solution](./problems/12-rotate-matrix.js)                | Advanced, Logical, Arrays  |
+| 13  | Longest Word                | [Solution](./problems/13-longes-word.js)                  | Strings, Arrays            |
