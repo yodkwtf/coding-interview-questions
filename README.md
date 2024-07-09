@@ -1,10 +1,10 @@
-# Coding Interview Problems
+# Coding Interview Questions
 
-This repository contains solutions to some common coding interview problems. The problems are solved in JavaScript. Contributions in other languages are welcome.
+This repository contains solutions to some common coding interview questions. The questions are solved in JavaScript. Contributions in other languages are welcome.
 
-## List of Problems
+## List of Questions
 
-| No. | Problem                     | Answer                                                    | Tags                       |
+| No. | Question                    | Answer                                                    | Tags                       |
 | :-: | --------------------------- | --------------------------------------------------------- | -------------------------- |
 |  1  | Reverse String and Integers | [Solution](./problems/01-reverse-strings-and-integers.js) | Strings                    |
 |  2  | Check Palindrome            | [Solution](./problems/02-palindrome.js)                   | Strings                    |
