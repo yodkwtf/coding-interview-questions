@@ -1,4 +1,4 @@
-//* Write a function that accepts a string.  The function should capitalize the first letter of each word in the string thenreturn the capitalized string.
+//* Write a function that accepts a string. The function should capitalize the first letter of each word in the string then return the capitalized string.
 // --- Examples
 // capitalize('this is durgesh from yodkwtf academy')
 // > 'This Is Durgesh FromYodkwtf Academy'
