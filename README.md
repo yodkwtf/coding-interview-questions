@@ -20,3 +20,4 @@ This repository contains solutions to some common coding interview questions. Th
 | 12  | Rotate Matrix               | [Solution](./problems/12-rotate-matrix.js)                | Advanced, Logical, Arrays  |
 | 13  | Longest Word                | [Solution](./problems/13-longes-word.js)                  | Strings, Arrays            |
 | 14  | Array Sum to Largest Number | [Solution](./problems/14-array-sum-to-largest-element.js) | Arrays                     |
+| 15  | Max Repeated Character      | [Solution](./problems/15-max-repeated-characters.js)      | Strings, Arrays            |
